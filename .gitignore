@@ -1,1 +1,4 @@
 data/
+.env
+Readme.MD
+configs/
