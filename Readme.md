@@ -10,6 +10,9 @@ An end-to-end ELT lakehouse project built on the MovieLens 32M dataset with Dags
 
 This project takes raw CSV files, lands them in a Bronze layer on S3, transforms them into clean Silver dimension and fact tables, builds Gold analytical marts and SCD Type 2 snapshots, registers them in Glue, exposes them through Athena, and visualizes the results in Metabase.
 
+
+![Pipeline Architecture](.pipeline-architecture.png)
+
 ## Project At A Glance
 
 - Built a medallion-style lakehouse pipeline from raw CSV to analytics-ready marts
@@ -63,30 +66,6 @@ flowchart TD
     L --> E
     L --> F
     L --> G
-```
-
-### Pipeline Architecture Image
-
-Add your main pipeline image here.
-
-```md
-![Pipeline Architecture](./your-image-path/pipeline-architecture.png)
-```
-
-### Dagster Asset Graph Image
-
-Add your Dagster asset graph screenshot here.
-
-```md
-![Dagster Asset Graph](./your-image-path/dagster-asset-graph.png)
-```
-
-### Dashboard Image
-
-Add your Metabase dashboard screenshot here.
-
-```md
-![Metabase Dashboard](./your-image-path/metabase-dashboard.png)
 ```
 
 ## Tech Stack
